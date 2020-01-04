@@ -13,6 +13,9 @@ jobs:
         name: install-yarn
         command: curl -o- -L https://yarnpkg.com/install.sh | bash
     - run:
+        name: install-dependencies
+        command: yarn install
+    - run:
         name: test
         command: yarn test
 workflows:
