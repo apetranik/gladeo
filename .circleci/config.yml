@@ -34,8 +34,8 @@ jobs:
           JEST_JUNIT_OUTPUT_DIR: "reports"
     - store_artifacts:
         path: reports
-    # - store_test_results:
-    #     path: coverage
+    - store_test_results:
+        path: reports
 workflows:
   version: 2
   workflow:
