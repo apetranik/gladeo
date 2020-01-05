@@ -16,9 +16,9 @@
     "testDebug": "jest -o --watch --coverage",
     "testFinal": "jest",
     "updateSnapshots": "jest -u --coverage=false",
-    "lint": "eslint src/**/**/**/*.tsx",
-    "lint-fix": "eslint --fix src/**/**/**/*.tsx",
-    "precommit": "lint-staged && yarn lint",
+    "lint": "eslint *",
+    "lint-fix": "eslint --fix *",
+    "precommit": "yarn lint --fix",
     "eslint-check": "eslint --print-config src/**/*/*.ts | eslint-config-prettier-check",
     "server": "nodemon server/server.js",
     "dev": "run-p server start"
